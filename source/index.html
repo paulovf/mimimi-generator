@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+    	<link rel="icon" href="img/favicon.ico">
+    	<title>Mi mi mi Generator</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/site.css" rel="stylesheet">
+  	</head>
+  	<body>
+    	<div class="site-wrapper">
+      		<div class="site-wrapper-inner">
+        		<div class="cover-container">
+          			<div class="masthead clearfix">
+            			<div class="inner">
+              				<h3 class="masthead-brand"><img class="logo_mimimi" src="img/mimimi.jpg" /></h3>
+              				<nav class="nav nav-masthead">
+                				<a class="nav-link active" href="#">Home</a>
+              				</nav>
+            			</div>
+          			</div>
+
+          			<div class="inner cover">
+            			<h1 class="cover-heading">Mi mi mi Generator.</h1>
+            			<p class="lead">Os invasores das escolas e faculdades tem um recado pra você:</p>
+            			<p id="field_mimimi" class="lead">&nbsp;</p>
+            			<p class="lead" onclick="generateMimimi()">
+              				<a href="#" id="btn_generator_mimimi" class="btn btn-lg btn-secondary">Gerar</a>
+            			</p>
+          			</div>
+          			<audio id="music" css="invisible" controls>
+					  	<source src="audio/music.ogg" type="audio/ogg">
+					  	<source src="audio/music.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+          			<div class="mastfoot">
+            			<div class="inner">
+              				<p>Desenvolvido por: <a href="#">Quem trabalha, estuda, corre atrás e não invade!</a></p>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+
+    	<script src="js/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    	<script src="js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    	<script src="js/ie10-viewport-bug-workaround.js"></script>
+    	<script type="text/javascript">
+			var mimimiList = [
+				"Quem disse que não tem aula? Estamos tendo aulas de capoeira e música!",
+				"Você é coxinha. Não falo com coxinhas!",
+				"O que é PEC?",
+                "Eu não li a PEC, mas estou aqui porque nosso movimento é legitimo!",
+				"Você é burĝuês, não tem legitimidade para questionar nossa ocupação!",
+				"A vontade da \"maioria\" se sobrepõe as regras!",
+				"Nosso movimento não está prejudicando ninguém. A \"maioria\" está ao nosso lado!",
+				"O que são 20 dias de ocupação, diante de 20 anos de sucateamento da educação!",
+				"Nosso movimento é anti burguesia!",
+				"#NãoVaiTerProva!",
+				"Vocês são fascistas, diante de tal situação a opinião de vocês não conta!",
+				"Não vai ter aula, está ocupado! O direito de vocês não conta, somente o nosso!",
+				"Eu li apenas a parte que me toca, no que se refere a questão da PEC",
+				"Vou chamar nossoo advogado!",
+				"O diretor liberou. Ele está acima da constituição de 1988!",
+				"Quem bate cartão não vota em patrão!",
+				"Trabalhador vota em trabalhador!",
+				"Fizemos uma assembléia. Está tudo certo!",
+				"Agora é hora de darmos uma pausa na revolução e irmos para o Happy Hour",
+				"Alguém viu o carregador do meu Iphone?",
+				"Você é machista, homofóbico, facista, golpista!",
+				"Isso não foi a gente. Foi a direita!",
+				"Você não concorda comigo? Então você está errado. Você é de direita!",
+				"Suas mãos estão sujas de sangue!",
+                "Eu não debato com quem não concorda comigo, eu bato!"
+			];
+			var lenList = mimimiList.length;
+			function generateMimimi(){
+				var index = Math.floor(Math.random() * lenList);
+				document.getElementById("field_mimimi").innerHTML = mimimiList[index];
+				if(index <= 4){
+					document.getElementById('music').play();
+				}
+			}
+		</script>
+  	</body>
+</html>
